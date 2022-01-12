@@ -22,11 +22,12 @@ In the exploratory data analysis it is easy to see the patterns vary greatly wit
 ![image](https://user-images.githubusercontent.com/72278168/145046763-374f5e6d-6326-45ea-9cd9-602417b3d071.png)
 
 Finally, the modelling and evaluation. Again, this was the main focus of the project and all the code can be seen in the "FINAL_Vaccination prediction.ipynb" notebook.
-Without getting into too much detail, to assess each model it's interesting to look at the evolution of the [Markov chains](https://en.wikipedia.org/wiki/Markov_chain) , the distributions and the sample variance.
-Along the modelling phase, the following models were tried:
+Without getting into too much detail, to assess each model it's interesting to look at the evolution of the [Markov chains](https://en.wikipedia.org/wiki/Markov_chain), the distributions and the sample variance.
+Along the modelling phase, the different models are tried evaluating each model and rejecting or further developing the model based on the accuracy of the predictions. All in all, the different models tried are:
  1 - AR(1), country-specific forecast
  2 - AR(1), country-specific with priors for the country clustering
  3 - AR(1), cluster-specific forecast
     3.1 - with the data standardization from the preprocessing
     3.2 - with a log scale
     3.3 - with a lag of the differenced weekly vaccinations
+ 4 - 
