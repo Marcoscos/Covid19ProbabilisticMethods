@@ -25,9 +25,13 @@ Finally, the modelling and evaluation. Again, this was the main focus of the pro
 Without getting into too much detail, to assess each model it's interesting to look at the evolution of the [Markov chains](https://en.wikipedia.org/wiki/Markov_chain), the distributions and the sample variance.
 Along the modelling phase, the different models are tried evaluating each model and rejecting or further developing the model based on the accuracy of the predictions. All in all, the different models tried are:
  1 - AR(1), country-specific forecast
- 2 - AR(1), country-specific with priors for the country clustering
+ 2 - AR(1), cluster-specific with priors for the country clustering
  3 - AR(1), cluster-specific forecast
     3.1 - with the data standardization from the preprocessing
     3.2 - with a log scale
     3.3 - with a lag of the differenced weekly vaccinations
- 4 - 
+ 4 - AR(1), country-specific forecast with data standardization and temporal factor
+ 5 - AR(2), country-specific forecast with data standardization and temporal factor
+ 6 - AR(2), as in [5], with Hierarchical Model. We introduce a Hierarchical Model, imposing the mean and standard deviations of our coefficients b and standard deviation W to assume some specific values. These numbers have been identified after running the model multiple times and observing the results from the chains and the convergence of the parameters to specific values. 
+ 
+ To conclude, this final model results in an icnrease of R2 of 0.001. which suggests that the mean and standard deviation of every prior was already close to the optimal value without using the hiearchical model. Moreover, this also means that the quality of the chains was already good, especially due to the fact that we set iter=1000 and chains=6 in the sampling to increase convergence of the chains.
