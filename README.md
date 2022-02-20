@@ -1,7 +1,7 @@
 # Covid19ProbabilisticMethods
 This repo contains a project whose objective is to forecast the total number of vaccinations in each country based on the World Bank's Covid-19 dataset, using probabilistic models.
 
-Probabilistic models are part of what is called "Bayesian" methodologies, as opposed to the regular machine learning or "Frequentist" methodologies. These methods focus on acknowledging and quantifying both what is known and what is unknown. The probabilistic methods approximate (physical) processes to probability distributions and by understanding the underlying processes they are able to make predictions and quantify uncertainty. In particular, the project using Markov Chain Montecarlo methods since they are integrated in pyStan.
+Probabilistic models are part of what is called "Bayesian" methodologies, as opposed to the regular machine learning or "Frequentist" methodologies. These methods focus on acknowledging and quantifying both what is known and what is unknown. The probabilistic methods approximate (physical) processes to probability distributions and by understanding the underlying processes they are able to make predictions and quantify uncertainty. In particular, the project uses Markov Chain Montecarlo methods since they are integrated in pyStan.
 
 About the project itself, it consists of the following stages: preprocessing, exploratory data analysis, data preparation, modelling and evaluation.
 It was a group project which was the focus of the course 42186 - Model-Based Machine Learning taught at the Technical University of Denmark.
